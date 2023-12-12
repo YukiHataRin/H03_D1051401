@@ -1,0 +1,15 @@
+{% extends "master.html" %}
+
+{% block title %}
+  {{ court.name }} 的詳細資訊
+{% endblock %}
+
+
+{% block content %}
+  <h1>{{ court.name }}</h1>
+  <p>城市: {{ court.city }}</p>
+  <p>類型: {{ court.type }}</p>
+  <p>回到 <a href="/court">Courts</a></p>
+  
+
+{% endblock %}

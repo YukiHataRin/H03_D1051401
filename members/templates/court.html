@@ -1,0 +1,13 @@
+{% extends "master.html" %}
+
+
+{% block content %}
+    <p><a href="/">HOME</a></p>
+    <h1>所有球場一覽</h1>
+    <ul>
+    {% for x in court %}
+    <li><a href="court_details/{{ x.id }}">{{ x.name }} {{ x.type }} {{x.city}}</a></li>
+    {% endfor %}
+  </ul>
+  
+{% endblock %}
